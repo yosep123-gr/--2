@@ -1,0 +1,116 @@
+:root {
+  /*size*/
+  --side-padding: 12px;
+  --avatar-size: 36px;
+
+  /*font size*/
+  --font-large: 18px;
+  --font-medium: 14px;
+  --font-samll: 12px;
+  --font-micro: 10px;
+}
+
+body {
+  /*만약 바디 부분에 마진이 생긴다면 위에 부분에 붇지 않고 살짝 뜨기 때문에 필요없을시에는 마진을 0으로 해준다 html에서 입력한 폰트또한 css에도 입력해줘야 한다.*/
+  margin: 0;
+  font-family: "Hind Siliguri", sans-serif;
+}
+
+.DR {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: left;
+  padding: 8px 12px;
+}
+
+.img {
+  position: relative;
+}
+
+.img .content {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: black;
+  z-index: 2;
+  text-align: left;
+}
+
+.section_introduction {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 8px 12px;
+}
+
+.sub_introduction {
+  font-size: 18px;
+}
+
+.article_information {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.article_information:after {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background: url("KakaoTalk_20200616_124037927_04.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  opacity: 0.3 !important;
+  filter: alpha(opacity=30);
+}
+
+.Trasform_smile {
+  text-align: center;
+}
+
+.Trasform_smile .patient_img .img .imgs {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: left;
+  padding: 8px 12px;
+  list-style: none;
+}
+
+.patient_img .img {
+  max-width: 100%;
+  height: auto !important;
+}
+
+.call_us_icons {
+  list-style: none;
+  color: black;
+  display: flex;
+  padding-left: 0;
+}
+
+.call_us_icons li {
+  padding: 8px 12px;
+}
+
+.book_appointment {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: left;
+  padding: 8px 12px;
+}
+
+.book_appointment .call_us_icons {
+  display: flex;
+  list-style: none;
+}
